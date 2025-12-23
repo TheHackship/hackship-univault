@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
-        rel="fontsheet">
+        rel="stylesheet">
 </head>
 
 <body>
@@ -35,62 +35,12 @@
         <section id="resources">
             <h2>## Academic Resources</h2>
 
-            <details class="details-block">
-                <summary>Rajiv Gandhi Proudyogiki Vishwavidyalaya (R.G.P.V)</summary>
+            <div class="disclaimer">
+                <strong>⚠️ Disclaimer:</strong> Please verify that these notes correspond to your institute's syllabus
+                before using them for your studies.
+            </div>
 
-                <div class="nested-content">
-                    <h3>### B.Tech – Computer Science & Engineering</h3>
-                    <p class="badge">5th Semester</p>
-
-                    <details class="subject-block">
-                        <summary>Theory Of Computation</summary>
-                        <ul>
-                            <li><a href="https://drive.google.com/file/d/1L4VJNfONCGlH8vXT_pDTgl12blitvjnp/view?pli=1"
-                                    download>Unit 1 – Theory Of Computation</a></li>
-                            <li><a href="https://drive.google.com/file/d/1E9SmFM6mc0v7yVwkJ0Txf8YnwYGE7Pwe/view?usp=sharing"
-                                    download>Unit 2 – Theory Of Computation</a></li>
-                            <li><a href="https://drive.google.com/file/d/17NNmGkP4dEoglKlCxZCRpctXq2GsxI0T/view?usp=sharing"
-                                    download>Unit 3 – Theory Of Computation</a></li>
-                            <li><a href="https://drive.google.com/file/d/1IKeG78lw7hQD6oOTHzxMSrVPvMXBU1ho/view?usp=sharing"
-                                    download>Unit 4 – Theory Of Computation</a></li>
-                            <li><a href="https://drive.google.com/file/d/1DVC-YGFHIFXYgIycgokXF8H9f45EB7ee/view?usp=sharing"
-                                    download>Unit 5 – Theory Of Computation</a></li>
-                        </ul>
-                    </details>
-
-                    <details class="subject-block">
-                        <summary>Database Management Systems</summary>
-                        <ul>
-                            <li><a href="/resources/dbms/unit-1.pdf" download>Unit 1 – Database Management System</a>
-                            </li>
-                            <li><a href="/resources/dbms/unit-2.pdf" download>Unit 2 – Database Management System</a>
-                            </li>
-                            <li><a href="/resources/dbms/unit-3.pdf" download>Unit 3 – Database Management System</a>
-                            </li>
-                            <li><a href="/resources/dbms/unit-4.pdf" download>Unit 4 – Database Management System</a>
-                            </li>
-                            <li><a href="/resources/dbms/unit-5.pdf" download>Unit 5 – Database Management System</a>
-                            </li>
-                        </ul>
-                    </details>
-
-                    <details class="subject-block">
-                        <summary>Internet and Web Technology</summary>
-                        <ul>
-                            <li><a href="/resources/iot/unit-1.pdf" download>Unit 1 – Internet and Web Technology</a>
-                            </li>
-                            <li><a href="/resources/iot/unit-2.pdf" download>Unit 2 – Internet and Web Technology</a>
-                            </li>
-                            <li><a href="/resources/iot/unit-3.pdf" download>Unit 3 – Internet and Web Technology</a>
-                            </li>
-                            <li><a href="/resources/iot/unit-4.pdf" download>Unit 4 – Internet and Web Technology</a>
-                            </li>
-                            <li><a href="/resources/iot/unit-5.pdf" download>Unit 5 – Internet and Web Technology</a>
-                            </li>
-                        </ul>
-                    </details>
-                </div>
-            </details>
+            <div id="institutes-container"></div>
         </section>
 
         <hr>
@@ -102,18 +52,17 @@
                 slides, and made Wikipedia file a restraining order. Get notes, projects,
                 and smart study help—no tears (okay, maybe a few).
             </p>
-            <h2>## What is Hackship?</h2>
-            <p>
-                Most tech communities either fizzle out after a few projects or focus on complex solutions that feel
-                impossible to actually use.
-            </p>
-            <p>
-                <strong>Hackship is different.</strong> We are a vibrant community and crew dedicated to
-                <strong>enabling businesses</strong> with <strong>open-source enterprise technology solutions</strong>.
-                Our goal is to make powerful tech accessible, practical, and ready to implement — whether you're a
-                startup, SME, or just curious about what open-source can do for you.
-            </p>
 
+            <h2>## Why Choose UniVault?</h2>
+            <p>
+                Let's face it — most <strong>other study sites</strong> are either
+                <strong>abandoned group projects from 2012</strong> or look like they were built
+                during a <strong>coffee-fueled all-nighter</strong>... and never touched again.
+            </p>
+            <p>
+                <strong>We are different.</strong> We're alive, organized, and actually useful.
+                We make high-quality academic content easy to find, fun to use, and impossible to forget.
+            </p>
         </section>
 
         <hr>
@@ -135,5 +84,83 @@
         </div>
     </footer>
 
+    <script>
+
+        function renderInstitutes(data) {
+            const container = document.getElementById('institutes-container');
+
+            data.institutes.forEach(institute => {
+                // Create institute details element
+                const instituteDetails = document.createElement('details');
+                instituteDetails.className = 'details-block';
+
+                const instituteSummary = document.createElement('summary');
+                instituteSummary.textContent = institute.name;
+                instituteDetails.appendChild(instituteSummary);
+
+                const instituteContent = document.createElement('div');
+                instituteContent.className = 'nested-content';
+
+                // Render courses
+                institute.courses.forEach(course => {
+                    const courseHeading = document.createElement('h3');
+                    courseHeading.textContent = `### ${course.name}`;
+                    instituteContent.appendChild(courseHeading);
+
+                    const semesterBadge = document.createElement('p');
+                    semesterBadge.className = 'badge';
+                    semesterBadge.textContent = course.semester;
+                    instituteContent.appendChild(semesterBadge);
+
+                    // Render subjects
+                    course.subjects.forEach(subject => {
+                        const subjectDetails = document.createElement('details');
+                        subjectDetails.className = 'subject-block';
+
+                        const subjectSummary = document.createElement('summary');
+                        subjectSummary.textContent = subject.name;
+                        subjectDetails.appendChild(subjectSummary);
+
+                        const unitList = document.createElement('ul');
+
+                        // Render units
+                        subject.units.forEach(unit => {
+                            const li = document.createElement('li');
+                            const a = document.createElement('a');
+                            a.href = unit.link;
+                            a.textContent = unit.title;
+                            a.download = true;
+                            li.appendChild(a);
+                            unitList.appendChild(li);
+                        });
+
+                        subjectDetails.appendChild(unitList);
+                        instituteContent.appendChild(subjectDetails);
+                    });
+                });
+
+                instituteDetails.appendChild(instituteContent);
+                container.appendChild(instituteDetails);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderInstitutes(config);
+        });
+
+        async function loadFromJSON(url) {
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                document.getElementById('institutes-container').innerHTML = '';
+                renderInstitutes(data);
+            } catch (error) {
+                console.error('Error loading JSON:', error);
+            }
+        }
+
+        loadFromJSON('/config.json');
+    </script>
 </body>
+
 </html>
