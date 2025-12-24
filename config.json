@@ -12,23 +12,82 @@
               "units": [
                 {
                   "title": "Unit 1 – Theory Of Computation",
-                  "link": "https://drive.google.com/file/d/1L4VJNfONCGlH8vXT_pDTgl12blitvjnp/view?pli=1"
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQAnv0idBy0jRL0ZTQ9C8cxrARcRH-c_SayPRLRc1Tx10MM?e=fWkowt"
                 },
                 {
                   "title": "Unit 2 – Theory Of Computation",
-                  "link": "https://drive.google.com/file/d/1E9SmFM6mc0v7yVwkJ0Txf8YnwYGE7Pwe/view?usp=sharing"
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQAaHckZlLLuQZxRryvSSOF2AdCtSX6O3H9BQLAYVJLOL9k?e=CLHTDZ"
                 },
                 {
                   "title": "Unit 3 – Theory Of Computation",
-                  "link": "https://drive.google.com/file/d/17NNmGkP4dEoglKlCxZCRpctXq2GsxI0T/view?usp=sharing"
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQAVSCV8Iv1qSIeJqrq9cuIWAdMqDYi2r7mJymMBwYUCXdk?e=5Hc51l"
                 },
                 {
                   "title": "Unit 4 – Theory Of Computation",
-                  "link": "https://drive.google.com/file/d/1IKeG78lw7hQD6oOTHzxMSrVPvMXBU1ho/view?usp=sharing"
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQA-fs69vFynR7RgclL6cSkOAUMIn-_gHsMgMebJHDTHKcs?e=JyK6Hg"
                 },
                 {
                   "title": "Unit 5 – Theory Of Computation",
-                  "link": "https://drive.google.com/file/d/1DVC-YGFHIFXYgIycgokXF8H9f45EB7ee/view?usp=sharing"
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQC1IL0TcLCJRa2w3whKoBRvAft4X0N2aB5aP2v7NbfNbDA?e=qMwFlV"
+                }
+              ]
+            },
+            {
+              "name": "Database Management System",
+              "units": [
+                {
+                  "title": "Unit 1 – Database Management System",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQAx7hj54A4iT760n1fkC5TgAXF3TtSgnNJxIBwXg1gKuMs?e=yUg6TO"
+                },
+                {
+                  "title": "Unit 2 – Database Management System",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQDgbScqkIRNRKNN6mZkBNb6AbespUCewryOb1v6JYf4xBE?e=iFVUL3"
+                }
+              ]
+            },
+            {
+              "name": "Internet Web and Technology",
+              "units": [
+                {
+                  "title": "Unit 2 – Internet Web and Technology",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQBRyVZaP2YVSp9ts6e7HZhtAe83VV8brgp3c3TrhxSrcLI?e=rv6efj"
+                },
+                {
+                  "title": "Unit 3 – Internet Web and Technology",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQCoCTS1Kn6CRJ-SF6geq1h6AXIUyuBIUraPNDOFuMRkSsk?e=S0I6QO"
+                },
+                {
+                  "title": "Unit 4 – Internet Web and Technology",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQCJLTflYLHUSIYzNxPTzaCyAQUOJa0WWtYuGoD5NmRMLR4?e=fU2W5i"
+                },
+                {
+                  "title": "Unit 5 – Internet Web and Technology",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQBh1qbNqi9wRbQRzqI1dotiAVtSBoZVgtMbJppQ2ezEEf8?e=zYcaec"
+                }
+              ]
+            },
+            {
+              "name": "Cyber Security",
+              "units": [
+                {
+                  "title": "Unit 1 – Cyber Security",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQAbA98AwGQsTpeQW9lOJVdUAR1wbbYRWTjews-ybDwcy6c?e=iPJfeg"
+                },
+                {
+                  "title": "Unit 2 – Cyber Security",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQDMl3T5ovNqQ7p3Oz_GLGk7ARi9yYCd8OPtBTPDK_4EXK0?e=2O6vt4"
+                },
+                {
+                  "title": "Unit 3 – Cyber Security",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQCwT6I-Q886RJm2xK9uvu8aAUni-9J908uor-oKaJxLGqs?e=Bq3Rcf"
+                },
+                {
+                  "title": "Unit 4 – Cyber Security",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQDUA-ti6yAZQIEdLKRnKGlQAYgFO_X342aRdpbspfchuts?e=Y91tt6"
+                },
+                {
+                  "title": "Unit 5 – Cyber Security",
+                  "link": "https://1drv.ms/b/c/603ee17f1ca4f69c/IQBp0FG0iUdYRbaQyfMjN_COAdWLU86VpIHkDaJ5z9HVCCg?e=uulrlB"
                 }
               ]
             }
