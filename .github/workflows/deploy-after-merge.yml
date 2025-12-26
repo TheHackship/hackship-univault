@@ -1,0 +1,28 @@
+name: Trigger Deploy Webhook After Merge
+
+on:
+  pull_request:
+    types: [closed]
+    branches:
+      - main
+
+jobs:
+  trigger-webhook:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Trigger HTTP Webhook
+        run: |
+          curl -X POST "$WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: $AUTH_TOKEN" \
+            -d '{
+              "service": "hackship-univault",
+              "action": "PULL",
+              "branch": "master"
+            }'
+        env:
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          AUTH_TOKEN: ${{ secrets.AUTH_TOKEN }}
+  
